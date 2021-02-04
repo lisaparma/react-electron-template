@@ -2,7 +2,8 @@
   "name": "react-electron-template",
   "version": "0.0.1",
   "main": "public/electron.js",
-  "homepage": "./",
+  "description": "React Electron template",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "electron-is-dev": "1.2.0",
@@ -51,33 +52,6 @@
     "wait-on": "5.2.1"
   },
   "config": {
-    "forge": {
-      "packagerConfig": {
-        "icon": "src/icons/mac/icon.icns",
-        "name": "React + Electron App"
-      },
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "cra_electron_forge_demo"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
+    "forge": "./config/forge.config.js"
   }
 }
